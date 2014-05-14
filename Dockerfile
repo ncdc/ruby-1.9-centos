@@ -52,10 +52,7 @@ ENV APP_ROOT .
 ENV HOME     /opt/ruby
 ENV PATH     $HOME/bin:$PATH
 
-# FIXME: This might be a potential bug in STI where if we keep the USER
-# instruction here, the resulting application image will fail to run.
-#
-# USER ruby
+USER ruby
 
 EXPOSE 9292
 
